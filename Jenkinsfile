@@ -1,9 +1,9 @@
 pipeline {
-    // 스테이지 별로 다른 거
+    // 스테이지 별로 다른 거 - 노드 1개이므로 아무거나..
     agent any
 
     triggers {
-        pollSCM('*/3 * * * *')
+        pollSCM('*/3 * * * *')  // crontab 3분 주기
     }
 
     environment {
